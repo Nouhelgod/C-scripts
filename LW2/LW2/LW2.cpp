@@ -2,13 +2,12 @@
 // ЛР 2 Вариант 30
 
 #include <iostream>
-//#include <iomanip>
 #include <math.h>
 using namespace std;
 
 
 int main() {
-	double x1 = -1, x2 = 3;
+	double x1 = -1.0, x2 = 3.0;
 	double h = 0.2;
 	double y;
 	double x = x1;
