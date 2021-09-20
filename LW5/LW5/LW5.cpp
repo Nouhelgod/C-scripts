@@ -2,6 +2,7 @@
 // ЛР 5 Вариант 30
 
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -14,7 +15,7 @@ int main()
     cout << "Введите n_1, n_2, m: \n";
     cin >> n_1 >> n_2 >> m;
 
-    int* p = new int[m];
+    vector<int> p(m);
 
     if (!(m > n_1 && m > n_2)) {
         cout << "Значение m должно быть больше n_1 и n_2! \n";
