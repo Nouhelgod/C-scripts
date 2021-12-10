@@ -16,7 +16,7 @@ void selectionSort(int data[], int lenD)
 
         for (int k = i; k < lenD; k++) {
 
-            if (data[j] > data[k]) {
+            if (data[j] < data[k]) {
                 j = k;
             }
 
@@ -36,14 +36,14 @@ int main()
     cin >> origin;
     int* arr = new int[sizeof(origin)];
 
-    for (int i = 1; i < sizeof(origin); i++) {
-        arr[i] = origin % int(pow(10, i)) / int(pow(10, i-1));
+    for (int i = 1; i <= sizeof(origin); i++) {
+        arr[i-1] = origin % int(pow(10, i)) / int(pow(10, i-1));
     }
 
     selectionSort(arr, sizeof(arr));
 
-    for (int i = 1; i < sizeof(arr); i++) {
-        cout << arr[sizeof(arr) - i];
+    for (int i = 0; i < sizeof(arr); i++) {
+        cout << arr[i];
     }
 }
 
