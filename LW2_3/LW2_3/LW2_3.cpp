@@ -76,9 +76,6 @@ class Date : public Triad {
             print_date(input);
         }
 
-        
-
-
     }
 };
 
