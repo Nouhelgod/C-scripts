@@ -1,6 +1,7 @@
 ﻿// Сурков Д. 8В01
 // ЛР 3 Вариант 30
 
+
 #include <iostream>
 using namespace std;
 
@@ -8,13 +9,11 @@ class Triad {
     public:
     int d,  m,  y;
 
-
     void set(int X = 0, int Y = 0, int Z = 0) {
         d = (X);
         m = (Y);
         y = (Z);
     }
-
 
     void compare() {
         if (d > m) cout << d << " > " << m;
