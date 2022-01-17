@@ -15,7 +15,6 @@ int main()
     setlocale(LC_ALL, "Russian");
 
     // n
-    
     double x, y, z;
     double n;
     cout << "Решение n. Задайте x y z разделив пробелом.\n";
@@ -25,7 +24,6 @@ int main()
     cout << "n = " << n << "\n\n";
 
     // s
-
     double a, b, c;
     double s;
     cout << "Решение s. Задайте a b c разделив пробелом.\n";
