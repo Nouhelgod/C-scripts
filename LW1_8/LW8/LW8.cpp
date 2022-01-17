@@ -1,6 +1,7 @@
 ﻿// Сурков Д. А. 8В01
 // ЛР 8 Вариант 29
 
+
 #include <iostream>
 #include <fstream>
 #include <vector>
