@@ -39,7 +39,6 @@ public:
         c = C;
     }
 
-
     FazzyNumber operator + (FazzyNumber R) {
         FazzyNumber result;
         result.set_a(b + R.get_b() - a - R.get_a());
