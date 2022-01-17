@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <fstream>
-#include <string> // getline()
+#include <string> 
 
 using namespace std;
 string FILEPATH = "D:\\Docks\\C++ scripts\\LW2_5\\LW2_5\\input_string.txt";
