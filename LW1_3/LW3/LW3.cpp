@@ -1,6 +1,7 @@
 ﻿// Сурков Д. А. 8В01 
 // ЛР 3 Вариант 30
 
+
 #include <iostream>
 #include <stdio.h>
 using namespace std;
