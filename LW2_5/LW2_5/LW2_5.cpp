@@ -1,11 +1,13 @@
-﻿// 
-//
+﻿// Сурков Д. А. 8В01
+// ЛР 5 Вариант 2
 
 #include <iostream>
 #include <fstream>
 #include <string> // getline()
 
 using namespace std;
+string FILEPATH = "D:\\Docks\\C++ scripts\\LW2_5\\LW2_5\\input_string.txt";
+
 
 template<typename T>
 class Arr {
@@ -22,12 +24,12 @@ public:
         delete[] arr;
     }
 
-    void operator = (Arr& op) {
-        this.size = op.size;
+    void operator = (Arr& other) {
+        this.size = other.size;
         this.arr = new T[size];
 
         for (int i = 0; i < size; i++) {
-            this->arr[i] = op.arr[i];
+            this->arr[i] = other.arr[i];
         }
     }
 
@@ -49,8 +51,6 @@ public:
 int main()
 {
     setlocale(LC_ALL, "Russian");
-
-    string FILEPATH = "D:\\Docks\\C++ scripts\\LW2_5\\LW2_5\\input_string.txt";
 
     string line;
     int length = 0;
@@ -84,11 +84,11 @@ int main()
     input_string.print();
 
     for (int i = 0; i < length; i++) {
-        if (input_string[i] % 2 == 0) {
-            input_string[i] *= 3;
+        if (i % 2 == 0) {
+            input_string[i] *= 2;
         }
         else {
-            input_string[i] *= 2;
+            input_string[i] *= 3;
         }
     }
 
