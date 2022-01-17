@@ -11,6 +11,7 @@ using namespace std;
 class Triangle {
 private:
 	int vertex[6];
+
 public:
 	void set_vertex(int min, int max) {
 		for(int i = 0; i < 6; i++) {
